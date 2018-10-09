@@ -1,6 +1,6 @@
 {
   "name": "@xh/eslint-config",
-  "version": "1.0.0",
+  "version": "0.2.2",
   "description": "Sharable base ESLint config for Hoist React applications",
   "repository": "github:exhi/eslint-config",
   "homepage": "https://xh.io",
@@ -11,8 +11,8 @@
     "index.js"
   ],
   "dependencies": {
-    "babel-eslint": "~10.0.1",
-    "eslint": "~5.6.1",
-    "eslint-plugin-react": "~7.11.1"
+    "babel-eslint": "~8.2.2",
+    "eslint": "~4.19.1",
+    "eslint-plugin-react": "~7.7.0"
   }
 }
