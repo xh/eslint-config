@@ -13,11 +13,31 @@ module.exports = {
         }
     },
 
+    // Browser is deliberately set to false to catch errors where a missing import falls back
+    // to a global without that being obvious - e.g. lodash `find` vs `window.find`.
+    // Selected browser globals are then whitelisted below.
     env: {
-        browser: true,
+        browser: false,
         commonjs: true,
         es6: true,
         node: true
+    },
+
+    globals: {
+        document: false,
+        fetch: false,
+        window: false,
+        AbortController: false,
+        Event: false,
+        FormData: false,
+        Headers: false,
+        xhAppCode: false,
+        xhAppName: false,
+        xhAppVersion: false,
+        xhAppBuild: false,
+        xhBaseUrl: false,
+        xhIsDevelopmentMode: false,
+        xhAgGridLicenseKey: false
     },
 
     rules: {
