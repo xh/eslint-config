@@ -1,6 +1,6 @@
 {
   "name": "@xh/eslint-config",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "description": "Sharable base ESLint config for Hoist React applications",
   "repository": "github:exhi/eslint-config",
   "homepage": "https://xh.io",
