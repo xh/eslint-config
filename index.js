@@ -31,6 +31,7 @@ module.exports = {
         Event: false,
         FormData: false,
         Headers: false,
+        WebSocket: false,
         xhAppCode: false,
         xhAppName: false,
         xhAppVersion: false,
