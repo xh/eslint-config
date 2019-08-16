@@ -1,5 +1,5 @@
 module.exports = {
-    plugins: ['react'],
+    plugins: ['react', 'react-hooks'],
     extends: ['eslint:recommended'],
 
     parser: 'babel-eslint',
@@ -54,9 +54,11 @@ module.exports = {
         'space-unary-ops': 0,
         'strict': 0,
 
-        // React - enabled
+        // React + Hooks - enabled
         'react/jsx-uses-react': 2,
         'react/jsx-uses-vars': 2,
+        'react-hooks/rules-of-hooks': 2,
+        'react-hooks/exhaustive-deps': 1,
 
         // Hoist - enabled / customized
         'no-unused-vars': [2, {
