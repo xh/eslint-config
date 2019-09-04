@@ -11,9 +11,9 @@
     "index.js"
   ],
   "dependencies": {
-    "babel-eslint": "~8.2.6",
-    "eslint": "~4.19.1",
+    "babel-eslint": "~10.0.3",
+    "eslint": "~6.3.0",
     "eslint-plugin-react": "~7.14.3",
-    "eslint-plugin-react-hooks": "~1.7.0"
+    "eslint-plugin-react-hooks": "~2.0.1"
   }
 }

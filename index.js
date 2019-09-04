@@ -6,10 +6,11 @@ module.exports = {
 
     parserOptions: {
         sourceType: 'module',
+        ecmaVersion: 2018,
         ecmaFeatures: {
             jsx: true,
             generators: true,
-            experimentalObjectRestSpread: true
+            legacyDecorators: true
         }
     },
 
@@ -24,21 +25,23 @@ module.exports = {
     },
 
     globals: {
-        document: false,
-        fetch: false,
-        window: false,
         AbortController: false,
         Event: false,
         FormData: false,
         Headers: false,
         WebSocket: false,
+        document: false,
+        fetch: false,
+        window: false,
+        xhAgGridLicenseKey: false,
+        xhAppBuild: false,
+        xhAppBuildTimestamp: false,
         xhAppCode: false,
         xhAppName: false,
         xhAppVersion: false,
-        xhAppBuild: false,
         xhBaseUrl: false,
-        xhIsDevelopmentMode: false,
-        xhAgGridLicenseKey: false
+        xhBuildTimestamp: false,
+        xhIsDevelopmentMode: false
     },
 
     rules: {
@@ -47,6 +50,7 @@ module.exports = {
         'no-console': 0,
         'no-empty': 0,
         'no-multi-spaces': 0,
+        'no-prototype-builtins': 0,
         'no-trailing-spaces': 0,
         'no-underscore-dangle': 0,
         'semi-spacing': 0,
