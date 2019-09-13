@@ -46,72 +46,75 @@ module.exports = {
 
     rules: {
         // Hoist - disabled
-        'eqeqeq': 0,
-        'no-console': 0,
-        'no-empty': 0,
-        'no-multi-spaces': 0,
-        'no-prototype-builtins': 0,
-        'no-trailing-spaces': 0,
-        'no-underscore-dangle': 0,
-        'semi-spacing': 0,
-        'space-infix-ops': 0,
-        'space-unary-ops': 0,
-        'strict': 0,
+        'eqeqeq': 'off',
+        'no-console': 'off',
+        'no-empty': 'off',
+        'no-multi-spaces': 'off',
+        'no-prototype-builtins': 'off',
+        'no-trailing-spaces': 'off',
+        'no-underscore-dangle': 'off',
+        'semi-spacing': 'off',
+        'space-infix-ops': 'off',
+        'space-unary-ops': 'off',
+        'strict': 'off',
 
         // React + Hooks - enabled
-        'react/jsx-uses-react': 2,
-        'react/jsx-uses-vars': 2,
-        'react-hooks/rules-of-hooks': 2,
-        'react-hooks/exhaustive-deps': 1,
+        'react/jsx-uses-react': 'error',
+        'react/jsx-uses-vars': 'error',
+        'react-hooks/rules-of-hooks': 'error',
+        'react-hooks/exhaustive-deps': 'warn',
 
         // Hoist - enabled / customized
-        'no-unused-vars': [2, {
+        'no-unused-vars': ['error', {
             ignoreRestSiblings: true,
             args: 'none'
         }],
-        'array-bracket-spacing': [2, 'never'],
-        'consistent-this': [2, 'me'],
-        'comma-dangle': 2,
-        'comma-spacing': [2, {
+        'array-bracket-spacing': ['error', 'never'],
+        'consistent-this': ['error', 'me'],
+        'comma-dangle': 'error',
+        'comma-spacing': ['error', {
             before: false,
             after: true
         }],
-        'comma-style': 2,
-        'brace-style': [2, '1tbs', {
+        'comma-style': 'error',
+        'brace-style': ['error', '1tbs', {
             allowSingleLine: true
         }],
-        'curly': [2, 'multi-line'],
-        'key-spacing': [2, {
+        'curly': ['error', 'multi-line'],
+        'key-spacing': ['error', {
             beforeColon: false,
             afterColon: true,
             mode: 'minimum'
         }],
-        'keyword-spacing': [2, {
+        'keyword-spacing': ['error', {
             before: true,
             after: true
         }],
-        'space-before-function-paren': [2, {
-            'anonymous': 'never',
-            'named': 'never',
-            'asyncArrow': 'always'
+        'space-before-function-paren': ['error', {
+            anonymous: 'never',
+            named: 'never',
+            asyncArrow: 'always'
         }],
-        'no-spaced-func': 2,
-        'space-in-parens': 2,
-        'space-before-blocks': 2,
-        'spaced-comment': [2, 'always', {
+        'no-spaced-func': 'error',
+        'space-in-parens': 'error',
+        'space-before-blocks': 'error',
+        'spaced-comment': ['error', 'always', {
             markers: ['=', 'noinspection'],
             exceptions: ['-']
         }],
-        'quotes': [2, 'single', 'avoid-escape'],
-        'indent': [2, 4, {
+        'quotes': ['error', 'single', {
+            avoidEscape: true,
+            allowTemplateLiterals: true
+        }],
+        'indent': ['error', 4, {
             SwitchCase: 1
         }],
-        'operator-linebreak': [2, 'after'],
-        'no-multiple-empty-lines': [2, {
+        'operator-linebreak': ['error', 'after'],
+        'no-multiple-empty-lines': ['error', {
             max: 2
         }],
-        'block-scoped-var': 2,
-        'semi': [2, 'always', {
+        'block-scoped-var': 'error',
+        'semi': ['error', 'always', {
             omitLastInOneLineBlock: true
         }]
     }
