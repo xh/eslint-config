@@ -1,5 +1,12 @@
 # Changelog
 
+## v2.1.1 - 2019-09-17
+
+### 📚 Libraries
+
+* eslint: `6.3 -> 6.4`
+* Ensure transitive deps upgraded in yarn.lock.
+
 ## v2.1.0 - 2019-09-13
 
 * Allows use of backticks to quote `plain strings` (without templates).
