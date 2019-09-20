@@ -7,9 +7,13 @@
 * eslint: `6.3 -> 6.4`
 * Ensure transitive deps upgraded in yarn.lock.
 
+[Commit Log](https://github.com/xh/eslint-config/compare/v2.1.0...v2.1.1)
+
 ## v2.1.0 - 2019-09-13
 
 * Allows use of backticks to quote `plain strings` (without templates).
+
+[Commit Log](https://github.com/xh/eslint-config/compare/v2.0.0...v2.1.0)
 
 ## v2.0.0 - 2019-09-03
 
@@ -23,4 +27,4 @@
 * eslint: `4.19 -> 6.3`
 * eslint-plugin-react-hooks: `1.7 -> 2.0`
 
-[Commit Log](https://github.com/exhi/eslint-config/compare/v1.2.0...v2.0.0)
+[Commit Log](https://github.com/xh/eslint-config/compare/v1.2.0...v2.0.0)

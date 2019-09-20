@@ -4,9 +4,9 @@ A shareable set of [ESLint](https://eslint.org/) configurations with ExHI's codi
 for Hoist React based development.
 
 Due to limitations of how ESLint's `extends` directive works, this needs to be built and published as its own 
-dedicated package. See https://eslint.org/docs/developer-guide/shareable-configs.
+dedicated package. See <https://eslint.org/docs/developer-guide/shareable-configs>.
 
 ----
-📫☎️🌎 info@xh.io | https://xh.io/contact
+📫☎️🌎 info@xh.io | <https://xh.io/contact>
 
 Copyright © 2019 Extremely Heavy Industries Inc.
