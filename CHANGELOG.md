@@ -1,5 +1,14 @@
 # Changelog
 
+## Unreleased
+
+### 📚 Libraries
+
+* eslint: `6.4 -> 6.5`
+* eslint-plugin-react-hooks: `2.0 -> 2.1`
+
+[Commit Log](https://github.com/xh/eslint-config/compare/v2.1.1...develop)
+
 ## v2.1.1 - 2019-09-17
 
 ### 📚 Libraries
