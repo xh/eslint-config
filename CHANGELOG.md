@@ -1,13 +1,17 @@
 # Changelog
 
-## Unreleased
+## v2.2.0 - 2019-10-02
+
+* Disable `react-hooks/rules-of-hooks` - the linter is unable to interpret our factory pattern
+  w/hook calls in render fn config, throwing false errors.
 
 ### 📚 Libraries
 
 * eslint: `6.4 -> 6.5`
+* eslint-plugin-react: `7.14 -> 7.15`
 * eslint-plugin-react-hooks: `2.0 -> 2.1`
 
-[Commit Log](https://github.com/xh/eslint-config/compare/v2.1.1...develop)
+[Commit Log](https://github.com/xh/eslint-config/compare/v2.1.1...v2.2.0)
 
 ## v2.1.1 - 2019-09-17
 

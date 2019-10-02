@@ -58,11 +58,12 @@ module.exports = {
         'space-unary-ops': 'off',
         'strict': 'off',
 
-        // React + Hooks - enabled
+        // React + Hooks
         'react/jsx-uses-react': 'error',
         'react/jsx-uses-vars': 'error',
-        'react-hooks/rules-of-hooks': 'error',
         'react-hooks/exhaustive-deps': 'warn',
+        // Linter unable to interpret our factory pattern w/hook calls in render fn config.
+        'react-hooks/rules-of-hooks': 'off',
 
         // Hoist - enabled / customized
         'no-unused-vars': ['error', {
