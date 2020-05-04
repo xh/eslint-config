@@ -26,6 +26,7 @@ module.exports = {
 
     globals: {
         AbortController: false,
+        Blob: false,
         Event: false,
         FormData: false,
         Headers: false,
