@@ -1,5 +1,17 @@
 # Changelog
 
+## v2.3.0 - 2020-07-10
+
+* Whitelist the `Blob` and `File` globals.
+* Apache 2.0 license (consistent with the rest of the XH Hoist libraries).
+
+### 📚 Libraries
+
+* babel-eslint: `10.0 -> 10.1`
+* eslint: `6.5 -> 6.8`
+* eslint-plugin-react: `7.15 -> 7.20`
+* eslint-plugin-react-hooks: `2.1 -> 2.5`
+
 ## v2.2.0 - 2019-10-02
 
 * Disable `react-hooks/rules-of-hooks` - the linter is unable to interpret our factory pattern
