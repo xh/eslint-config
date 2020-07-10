@@ -28,6 +28,7 @@ module.exports = {
         AbortController: false,
         Blob: false,
         Event: false,
+        File: false,
         FormData: false,
         Headers: false,
         WebSocket: false,
