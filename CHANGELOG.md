@@ -1,6 +1,6 @@
 # Changelog
 
-## v3.0.1 - 2021-02-23
+## v3.0.2 - 2021-02-23
 
 * Update to use `@babel/eslint-parser` and latest `eslint`.
 
