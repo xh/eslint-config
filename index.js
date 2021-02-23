@@ -6,12 +6,6 @@ module.exports = {
 
     parserOptions: {
         sourceType: 'module',
-        ecmaVersion: 2018,
-        ecmaFeatures: {
-            jsx: true,
-            generators: true,
-            legacyDecorators: true
-        },
         babelOptions: {
             configFile: "@xh/eslint-config/babel.config.js",
           },
