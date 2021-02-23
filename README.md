@@ -9,4 +9,4 @@ dedicated package. See <https://eslint.org/docs/developer-guide/shareable-config
 ----
 📫☎️🌎 info@xh.io | <https://xh.io/contact>
 
-Copyright © 2019 Extremely Heavy Industries Inc.
+Copyright © 2021 Extremely Heavy Industries Inc.
