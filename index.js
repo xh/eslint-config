@@ -2,16 +2,13 @@ module.exports = {
     plugins: ['react', 'react-hooks'],
     extends: ['eslint:recommended'],
 
-    parser: 'babel-eslint',
+    parser: "@babel/eslint-parser",
 
     parserOptions: {
         sourceType: 'module',
-        ecmaVersion: 2018,
-        ecmaFeatures: {
-            jsx: true,
-            generators: true,
-            legacyDecorators: true
-        }
+        babelOptions: {
+            configFile: "@xh/eslint-config/babel.config.js",
+          },
     },
 
     // Browser is deliberately set to false to catch errors where a missing import falls back

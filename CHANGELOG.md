@@ -1,5 +1,20 @@
 # Changelog
 
+## v3.0.0 - 2021-02-23
+
+* Update to use `@babel/eslint-parser` and latest `eslint`.
+
+### 📚 Libraries
+
+* @babel/eslint-parser: `added @ 7.13`
+* @babel/eslint-plugin: `added @ 7.13`
+* babel-eslint: `removed`
+* eslint: `6.8 -> 7.20`
+* eslint-plugin-react: `7.20 -> 7.22`
+* eslint-plugin-react-hooks: `2.5 -> 4.2`
+
+[Commit Log](https://github.com/xh/eslint-config/compare/v2.3.0...v3.0.0)
+
 ## v2.3.0 - 2020-07-10
 
 * Whitelist the `Blob` and `File` globals.
@@ -11,6 +26,8 @@
 * eslint: `6.5 -> 6.8`
 * eslint-plugin-react: `7.15 -> 7.20`
 * eslint-plugin-react-hooks: `2.1 -> 2.5`
+
+[Commit Log](https://github.com/xh/eslint-config/compare/v2.2.0...v2.3.0)
 
 ## v2.2.0 - 2019-10-02
 
