@@ -21,11 +21,13 @@ module.exports = {
         node: true
     },
 
+    // Setting to "false" here means "don't warn" - these are expected/valid globals.
     globals: {
         AbortController: false,
         Blob: false,
         Event: false,
         File: false,
+        FileReader: false,
         FormData: false,
         Headers: false,
         WebSocket: false,
