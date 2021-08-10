@@ -1,5 +1,14 @@
 # Changelog
 
+## v3.0.5 - 2021-08-10
+
+### 📚 Libraries
+
+* @babel/* `7.14 -> 7.15`
+* eslint: `7.29 -> 7.32`
+
+[Commit Log](https://github.com/xh/eslint-config/compare/v3.0.4...v3.0.5)
+
 ## v3.0.4 - 2021-07-01
 
 * Whitelist `FileReader` global.
