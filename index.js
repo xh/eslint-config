@@ -21,8 +21,8 @@ module.exports = {
         node: true
     },
 
-    // Setting to "false" here means "don't warn" - these are expected/valid globals.
     globals: {
+        // Setting to "false" here means "don't warn" - these are expected/valid globals.
         AbortController: false,
         Blob: false,
         Event: false,
@@ -42,7 +42,11 @@ module.exports = {
         xhAppVersion: false,
         xhBaseUrl: false,
         xhBuildTimestamp: false,
-        xhIsDevelopmentMode: false
+        xhIsDevelopmentMode: false,
+        // Flag use of `window.isFinite`. Not handled by `browser:false` config above and is a
+        // similar case where we more likely intend to use the lodash version (which yields a
+        // different result for `null`).
+        isFinite: 'off'
     },
 
     rules: {
