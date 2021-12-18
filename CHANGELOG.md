@@ -1,9 +1,18 @@
 # Changelog
 
+## v3.1.0 - 2021-12-17
+
+* Warn on use of `window.isFinite` global - the lodash version is our standard.
+* Sync babel config with browserslist from `hoist-dev-utils` (Edge -> last two versions).
+
+### 📚 Libraries
+* @babel/* `7.15 -> 7.16`
+* eslint-plugin-react `7.24 -> 7.27`
+* eslint-plugin-react-hooks `4.2 -> 4.3`
+
 ## v3.0.5 - 2021-08-10
 
 ### 📚 Libraries
-
 * @babel/* `7.14 -> 7.15`
 * eslint: `7.29 -> 7.32`
 
