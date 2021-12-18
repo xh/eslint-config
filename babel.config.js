@@ -6,7 +6,7 @@ module.exports = {
         '@babel/preset-react',
         [
             '@babel/preset-env',
-            {targets: 'last 2 Chrome versions, last 2 Safari versions, last 2 iOS versions, Edge >= 18'}
+            {targets: 'last 2 Chrome versions, last 2 Safari versions, last 2 iOS versions, last 2 Edge versions'}
         ]
     ],
     plugins: [
