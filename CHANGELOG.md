@@ -1,5 +1,15 @@
 # Changelog
 
+## v4.0.0 - 2022-03-16
+
+Updates ESLint to v8. No app-level breaking changes expected.
+
+### 📚 Libraries
+* @babel/* `7.16 -> 7.17`
+* eslint `7.32 -> 8.11`
+
+[Commit Log](https://github.com/xh/eslint-config/compare/v3.1.0...v4.0.0)
+
 ## v3.1.0 - 2021-12-17
 
 * Warn on use of `window.isFinite` global - the lodash version is our standard.
@@ -9,6 +19,8 @@
 * @babel/* `7.15 -> 7.16`
 * eslint-plugin-react `7.24 -> 7.27`
 * eslint-plugin-react-hooks `4.2 -> 4.3`
+
+[Commit Log](https://github.com/xh/eslint-config/compare/v3.0.5...v3.1.0)
 
 ## v3.0.5 - 2021-08-10
 
