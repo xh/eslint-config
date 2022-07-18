@@ -1,10 +1,22 @@
 # Changelog
 
+## v4.0.1 - 2022-07-18
+
+Workaround for breaking ESLint v8 change to the `indent` rule when used with decorators / class properties.
+
+### 📚 Libraries
+
+* @babel/* `7.17 -> 7.18`
+* eslint `8.11 -> 8.20`
+* eslint-plugin-react `7.29 -> 7.30`
+* eslint-plugin-react-hooks `4.3 -> 4.6`
+
 ## v4.0.0 - 2022-03-16
 
 Updates ESLint to v8. No app-level breaking changes expected.
 
 ### 📚 Libraries
+
 * @babel/* `7.16 -> 7.17`
 * eslint `7.32 -> 8.11`
 
@@ -16,6 +28,7 @@ Updates ESLint to v8. No app-level breaking changes expected.
 * Sync babel config with browserslist from `hoist-dev-utils` (Edge -> last two versions).
 
 ### 📚 Libraries
+
 * @babel/* `7.15 -> 7.16`
 * eslint-plugin-react `7.24 -> 7.27`
 * eslint-plugin-react-hooks `4.2 -> 4.3`
@@ -25,6 +38,7 @@ Updates ESLint to v8. No app-level breaking changes expected.
 ## v3.0.5 - 2021-08-10
 
 ### 📚 Libraries
+
 * @babel/* `7.14 -> 7.15`
 * eslint: `7.29 -> 7.32`
 

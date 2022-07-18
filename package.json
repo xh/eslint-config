@@ -12,11 +12,11 @@
     "babel.config.js"
   ],
   "dependencies": {
-    "@babel/core": "^7.17.0",
-    "@babel/eslint-parser": "^7.17.0",
-    "@babel/eslint-plugin": "^7.17.0",
-    "eslint": "^8.11.0",
-    "eslint-plugin-react": "^7.29.0",
-    "eslint-plugin-react-hooks": "^4.3.0"
+    "@babel/core": "^7.18.0",
+    "@babel/eslint-parser": "^7.18.0",
+    "@babel/eslint-plugin": "^7.17.7",
+    "eslint": "^8.20.0",
+    "eslint-plugin-react": "^7.30.0",
+    "eslint-plugin-react-hooks": "^4.6.0"
   }
 }
