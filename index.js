@@ -113,7 +113,10 @@ module.exports = {
             allowTemplateLiterals: true
         }],
         'indent': ['error', 4, {
-            SwitchCase: 1
+            SwitchCase: 1,
+            // Workaround for esLint v8 indent issue w/decorators.
+            // See https://github.com/eslint/eslint/issues/15299#issuecomment-968099681
+            ignoredNodes: ["PropertyDefinition"]
         }],
         'operator-linebreak': ['error', 'after'],
         'no-multiple-empty-lines': ['error', {
