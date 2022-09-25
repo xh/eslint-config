@@ -1,8 +1,8 @@
 module.exports = {
-    plugins: ['react', 'react-hooks'],
+    plugins: ['react', 'react-hooks', "@typescript-eslint/eslint-plugin"],
     extends: ['eslint:recommended'],
 
-    parser: "@babel/eslint-parser",
+     parser: "@typescript-eslint/parser",
 
     parserOptions: {
         sourceType: 'module',
