@@ -1,5 +1,9 @@
 # Changelog
 
+## v5.0.0-SNAPSHOT - unreleased
+
+* Support for TypeScript.
+
 ## v4.0.1 - 2022-07-18
 
 Workaround for breaking ESLint v8 change to the `indent` rule when used with decorators / class properties.
