@@ -2,13 +2,13 @@ module.exports = {
     plugins: ['react', 'react-hooks', "@typescript-eslint/eslint-plugin"],
     extends: ['eslint:recommended'],
 
-     parser: "@typescript-eslint/parser",
+    parser: "@typescript-eslint/parser",
 
     parserOptions: {
         sourceType: 'module',
         babelOptions: {
             configFile: "@xh/eslint-config/babel.config.js",
-          },
+        }
     },
 
     // Browser is deliberately set to false to catch errors where a missing import falls back
@@ -23,8 +23,11 @@ module.exports = {
 
     globals: {
         // Setting to "false" here means "don't warn" - these are expected/valid globals.
+        HTMLElement: false,
         AbortController: false,
         Blob: false,
+        DOMRect: false,
+        Element: false,
         Event: false,
         File: false,
         FileReader: false,
