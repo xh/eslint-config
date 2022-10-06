@@ -1,6 +1,6 @@
 {
   "name": "@xh/eslint-config",
-  "version": "5.0.0-SNAPSHOT",
+  "version": "5.0.0-SNAPSHOT.1665096041564",
   "description": "Sharable base ESLint config for Hoist React applications",
   "repository": "github:xh/eslint-config",
   "homepage": "https://github.com/xh/eslint-config",
@@ -15,11 +15,11 @@
     "@babel/core": "^7.18.0",
     "@babel/eslint-parser": "^7.18.0",
     "@babel/eslint-plugin": "^7.17.7",
+    "@typescript-eslint/eslint-plugin": "^5.38.0",
+    "@typescript-eslint/parser": "^5.38.0",
     "eslint": "^8.20.0",
     "eslint-plugin-react": "^7.30.0",
     "eslint-plugin-react-hooks": "^4.6.0",
-    "typescript": "4.8.3",
-    "@typescript-eslint/eslint-plugin": "^5.38.0",
-    "@typescript-eslint/parser": "^5.38.0"
+    "typescript": "4.8.3"
   }
 }
