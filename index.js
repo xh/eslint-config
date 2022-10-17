@@ -33,6 +33,7 @@ module.exports = {
         FileReader: false,
         FormData: false,
         Headers: false,
+        MouseEvent: false,
         WebSocket: false,
         document: false,
         fetch: false,
