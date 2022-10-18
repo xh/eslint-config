@@ -129,7 +129,8 @@ module.exports = {
         'block-scoped-var': 'error',
         'semi': ['error', 'always', {
             omitLastInOneLineBlock: true
-        }]
+        }],
+        "no-redeclare": "off",
+        "@typescript-eslint/no-redeclare": ['error', {ignoreDeclarationMerge: true}]
     }
-
 };
