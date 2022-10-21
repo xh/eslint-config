@@ -23,7 +23,6 @@ module.exports = {
 
     globals: {
         // Setting to "false" here means "don't warn" - these are expected/valid globals.
-        HTMLElement: false,
         AbortController: false,
         Blob: false,
         DOMRect: false,
@@ -31,8 +30,13 @@ module.exports = {
         Event: false,
         File: false,
         FileReader: false,
+        FocusEvent: false,
         FormData: false,
         Headers: false,
+        HTMLButtonElement: false,
+        HTMLElement: false,
+        HTMLInputElement: false,
+        KeyboardEvent: false,
         MouseEvent: false,
         WebSocket: false,
         document: false,
