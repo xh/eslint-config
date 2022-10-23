@@ -36,6 +36,7 @@ module.exports = {
         HTMLButtonElement: false,
         HTMLElement: false,
         HTMLInputElement: false,
+        HTMLTextAreaElement: true,
         KeyboardEvent: false,
         MouseEvent: false,
         WebSocket: false,
