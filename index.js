@@ -35,6 +35,7 @@ module.exports = {
         Headers: false,
         HTMLButtonElement: false,
         HTMLElement: false,
+        HTMLDivElement: false,
         HTMLInputElement: false,
         HTMLTextAreaElement: true,
         JSX: true,
