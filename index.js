@@ -87,7 +87,7 @@ module.exports = {
             args: 'none'
         }],
         'array-bracket-spacing': ['error', 'never'],
-        'consistent-this': ['error', 'me'],
+        'consistent-this': ['off'],
         'comma-dangle': 'error',
         'comma-spacing': ['error', {
             before: false,
