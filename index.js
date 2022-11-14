@@ -87,7 +87,6 @@ module.exports = {
             args: 'none'
         }],
         'array-bracket-spacing': ['error', 'never'],
-        'consistent-this': ['off'],
         'comma-dangle': 'error',
         'comma-spacing': ['error', {
             before: false,
@@ -137,6 +136,7 @@ module.exports = {
         'semi': ['error', 'always', {
             omitLastInOneLineBlock: true
         }],
+        "no-dupe-class-members": "off",
         "no-redeclare": "off",
         "@typescript-eslint/no-redeclare": ['error', {ignoreDeclarationMerge: true}]
     }
