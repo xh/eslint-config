@@ -136,6 +136,7 @@ module.exports = {
         'semi': ['error', 'always', {
             omitLastInOneLineBlock: true
         }],
+        // Allow for multiple method signatures in TS (which appear as dupe class members)
         "no-dupe-class-members": "off",
         "no-redeclare": "off",
         "@typescript-eslint/no-redeclare": ['error', {ignoreDeclarationMerge: true}]
