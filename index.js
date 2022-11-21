@@ -1,14 +1,14 @@
 module.exports = {
-    plugins: ['react', 'react-hooks'],
+    plugins: ['react', 'react-hooks', "@typescript-eslint/eslint-plugin"],
     extends: ['eslint:recommended'],
 
-    parser: "@babel/eslint-parser",
+    parser: "@typescript-eslint/parser",
 
     parserOptions: {
         sourceType: 'module',
         babelOptions: {
             configFile: "@xh/eslint-config/babel.config.js",
-          },
+        }
     },
 
     // Browser is deliberately set to false to catch errors where a missing import falls back
@@ -25,11 +25,22 @@ module.exports = {
         // Setting to "false" here means "don't warn" - these are expected/valid globals.
         AbortController: false,
         Blob: false,
+        DOMRect: false,
+        Element: false,
         Event: false,
         File: false,
         FileReader: false,
+        FocusEvent: false,
         FormData: false,
         Headers: false,
+        HTMLButtonElement: false,
+        HTMLElement: false,
+        HTMLDivElement: false,
+        HTMLInputElement: false,
+        HTMLTextAreaElement: true,
+        JSX: true,
+        KeyboardEvent: false,
+        MouseEvent: false,
         WebSocket: false,
         document: false,
         fetch: false,
@@ -76,7 +87,6 @@ module.exports = {
             args: 'none'
         }],
         'array-bracket-spacing': ['error', 'never'],
-        'consistent-this': ['error', 'me'],
         'comma-dangle': 'error',
         'comma-spacing': ['error', {
             before: false,
@@ -125,7 +135,10 @@ module.exports = {
         'block-scoped-var': 'error',
         'semi': ['error', 'always', {
             omitLastInOneLineBlock: true
-        }]
+        }],
+        // Allow for multiple method signatures in TS (which appear as dupe class members)
+        "no-dupe-class-members": "off",
+        "no-redeclare": "off",
+        "@typescript-eslint/no-redeclare": ['error', {ignoreDeclarationMerge: true}]
     }
-
 };

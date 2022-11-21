@@ -1,5 +1,18 @@
 # Changelog
 
+## v5.0.0 - 2022-11-21
+
+Support for TypeScript, including switch to specify `parser: "@typescript-eslint/parser"` and minor modifications to
+linting rules.
+
+### 📚 Libraries
+
+* @babel/* `7.18 -> 7.20`
+* @typescript-eslint/* `added @ 5.44`
+* eslint `8.20 -> 8.28`
+* eslint-plugin-react `7.30 -> 7.31`
+* typescript `added @ 4.9`
+
 ## v4.0.1 - 2022-07-18
 
 Workaround for breaking ESLint v8 change to the `indent` rule when used with decorators / class properties.
