@@ -1,5 +1,9 @@
 # Changelog
 
+## SNAPSHOT - 2023-01-03
+
+Support for TypeScript enums, which previously failed the `no-unused-vars` rule.
+
 ## v5.0.0 - 2022-11-21
 
 Support for TypeScript, including switch to specify `parser: "@typescript-eslint/parser"` and minor modifications to
