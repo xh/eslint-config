@@ -36,6 +36,7 @@ module.exports = {
         HTMLButtonElement: false,
         HTMLElement: false,
         HTMLDivElement: false,
+        HTMLImageElement: false,
         HTMLInputElement: false,
         HTMLTextAreaElement: true,
         JSX: true,
