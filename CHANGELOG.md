@@ -1,5 +1,9 @@
 # Changelog
 
+## v5.0.1 - 2023-01-05
+
+* Add HTMLImageElement to list of expected globals
+
 ## v5.0.0 - 2022-11-21
 
 Support for TypeScript, including switch to specify `parser: "@typescript-eslint/parser"` and minor modifications to
