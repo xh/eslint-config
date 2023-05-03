@@ -83,7 +83,7 @@ module.exports = {
         'react-hooks/rules-of-hooks': 'off',
 
         // Hoist - enabled / customized
-        'no-unused-vars': ['error', {
+        '@typescript-eslint/no-unused-vars': ['error', {
             ignoreRestSiblings: true,
             args: 'none'
         }],
