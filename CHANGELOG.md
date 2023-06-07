@@ -3,8 +3,9 @@
 ## v5.1.0 - 2023-07-08
 
 * @typescript-eslint rules will now only be applied to typescript files
-* Added '@typescript-eslint/return-await'
-* Added '@typescript-eslint/no-unused-vars'
+* Add '@typescript-eslint/return-await'
+* Add '@typescript-eslint/no-unused-vars'
+* Add Intl to list of expected globals
 
 ## v5.0.1 - 2023-01-05
 
