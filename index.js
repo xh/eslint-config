@@ -142,8 +142,13 @@ module.exports = {
     overrides: [
         {
             'parserOptions': {'project': ['./tsconfig.json']},
-            // Note: you must disable the base rules as it can report incorrect errors
+            // Note: Remember to disable the base rules when enabling the ts version
             rules: {
+                'no-unused-vars': 'off',
+                '@typescript-eslint/no-unused-vars': ['error', {
+                    ignoreRestSiblings: true,
+                    args: 'none'
+                }],
                 // Sets 'return-await' to 'in-try-catch' mode
                 'no-return-await': 'off',
                 '@typescript-eslint/return-await': ['error', {}],
