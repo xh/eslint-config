@@ -151,7 +151,7 @@ module.exports = {
                 }],
                 // Sets 'return-await' to 'in-try-catch' mode
                 'no-return-await': 'off',
-                '@typescript-eslint/return-await': ['error', {}],
+                '@typescript-eslint/return-await': ['error', 'in-try-catch'],
                 // Allow for multiple method signatures in TS (which appear as dupe class members)
                 'no-dupe-class-members': 'off',
                 'no-redeclare': 'off',
