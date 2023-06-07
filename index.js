@@ -141,5 +141,17 @@ module.exports = {
         "no-dupe-class-members": "off",
         "no-redeclare": "off",
         "@typescript-eslint/no-redeclare": ['error', {ignoreDeclarationMerge: true}]
-    }
+    },
+    // Run typescript-specific rules only on typescript files
+    overrides: [
+        {
+            'parserOptions': {'project': ['./tsconfig.json']},
+            rules: {
+                // Note: you must disable the base rule as it can report incorrect errors
+                'no-return-await': 'off',
+                '@typescript-eslint/return-await': ['error', {}]
+            },
+            files: ['*.ts', '*.tsx'],
+        }
+    ]
 };
