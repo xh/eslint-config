@@ -138,11 +138,13 @@ module.exports = {
         'semi': ['error', 'always', {
             omitLastInOneLineBlock: true
         }],
+        'no-return-await': 'error'
     },
     // Run typescript-specific rules only on typescript files
     overrides: [
         {
-            'parserOptions': {'project': ['./tsconfig.json']},
+            files: ['*.ts', '*.tsx'],
+            parserOptions: {'project': ['./tsconfig.json']},
             // Note: Remember to disable the base rules when enabling the ts version
             rules: {
                 'no-unused-vars': 'off',
@@ -157,8 +159,7 @@ module.exports = {
                 'no-dupe-class-members': 'off',
                 'no-redeclare': 'off',
                 '@typescript-eslint/no-redeclare': ['error', {ignoreDeclarationMerge: true}]
-            },
-            files: ['*.ts', '*.tsx'],
+            }
         }
     ]
 };
