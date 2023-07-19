@@ -1,13 +1,13 @@
 module.exports = {
-    plugins: ['react', 'react-hooks', "@typescript-eslint/eslint-plugin"],
+    plugins: ['react', 'react-hooks', '@typescript-eslint/eslint-plugin'],
     extends: ['eslint:recommended'],
 
-    parser: "@typescript-eslint/parser",
+    parser: '@typescript-eslint/parser',
 
     parserOptions: {
         sourceType: 'module',
         babelOptions: {
-            configFile: "@xh/eslint-config/babel.config.js",
+            configFile: '@xh/eslint-config/babel.config.js'
         }
     },
 
@@ -128,7 +128,7 @@ module.exports = {
             SwitchCase: 1,
             // Workaround for esLint v8 indent issue w/decorators.
             // See https://github.com/eslint/eslint/issues/15299#issuecomment-968099681
-            ignoredNodes: ["PropertyDefinition"]
+            ignoredNodes: ['PropertyDefinition']
         }],
         'operator-linebreak': ['error', 'after'],
         'no-multiple-empty-lines': ['error', {
@@ -158,7 +158,9 @@ module.exports = {
                 // Allow for multiple method signatures in TS (which appear as dupe class members)
                 'no-dupe-class-members': 'off',
                 'no-redeclare': 'off',
-                '@typescript-eslint/no-redeclare': ['error', {ignoreDeclarationMerge: true}]
+                '@typescript-eslint/no-redeclare': ['error', {
+                    ignoreDeclarationMerge: true
+                }]
             }
         }
     ]
