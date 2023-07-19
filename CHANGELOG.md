@@ -2,6 +2,8 @@
 
 ## v6.0.0 - 2023-07-19
 
+* Add `Intl` to list of expected globals
+
 ### 📚 Libraries
 
 * @babel/* `7.20 → 7.22`
@@ -12,12 +14,12 @@
 
 ## v5.0.1 - 2023-01-05
 
-* Add HTMLImageElement to list of expected globals
+* Add `HTMLImageElement` to list of expected globals
 
 ## v5.0.0 - 2022-11-21
 
-Support for TypeScript, including switch to specify `parser: "@typescript-eslint/parser"` and minor modifications to
-linting rules.
+* Support for TypeScript, including switch to specify `parser: "@typescript-eslint/parser"` and minor modifications to
+  linting rules.
 
 ### 📚 Libraries
 
