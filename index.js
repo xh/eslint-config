@@ -138,11 +138,30 @@ module.exports = {
         'semi': ['error', 'always', {
             omitLastInOneLineBlock: true
         }],
-        // Allow for multiple method signatures in TS (which appear as dupe class members)
-        'no-dupe-class-members': 'off',
-        'no-redeclare': 'off',
-        '@typescript-eslint/no-redeclare': ['error', {
-            ignoreDeclarationMerge: true
-        }]
-    }
+        'no-return-await': 'error'
+    },
+    // Run typescript-specific rules only on typescript files
+    overrides: [
+        {
+            files: ['*.ts', '*.tsx'],
+            parserOptions: {'project': ['./tsconfig.json']},
+            // Note: Remember to disable the base rules when enabling the ts version
+            rules: {
+                'no-unused-vars': 'off',
+                '@typescript-eslint/no-unused-vars': ['error', {
+                    ignoreRestSiblings: true,
+                    args: 'none'
+                }],
+                // Sets 'return-await' to 'in-try-catch' mode
+                'no-return-await': 'off',
+                '@typescript-eslint/return-await': ['error', 'in-try-catch'],
+                // Allow for multiple method signatures in TS (which appear as dupe class members)
+                'no-dupe-class-members': 'off',
+                'no-redeclare': 'off',
+                '@typescript-eslint/no-redeclare': ['error', {
+                    ignoreDeclarationMerge: true
+                }]
+            }
+        }
+    ]
 };

@@ -2,7 +2,10 @@
 
 ## v6.0.0 - 2023-07-19
 
-* Add `Intl` to list of expected globals
+* `@typescript-eslint` rules will now only be applied to TypeScript files.
+* Enabled `@typescript-eslint/return-await`
+* Added `@typescript-eslint/no-unused-vars`
+* Added `Intl` to list of expected globals
 
 ### 📚 Libraries
 
@@ -14,7 +17,7 @@
 
 ## v5.0.1 - 2023-01-05
 
-* Add `HTMLImageElement` to list of expected globals
+* Added `HTMLImageElement` to list of expected globals
 
 ## v5.0.0 - 2022-11-21
 
