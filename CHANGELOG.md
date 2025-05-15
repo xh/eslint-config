@@ -5,7 +5,7 @@
 ### 💥 Breaking Changes
 
 * Upgrade from eslint `v8.x` to `v9.x` requires changes to Hoist Applications' `eslint` configurations.
-  Rename the `.eslintrc` file to `eslint.client.js` and use the configuration found in Toolbox's `eslint.client.js`
+  Rename the `.eslintrc` file to `eslint.config.js` and use the configuration found in Toolbox's `eslint.config.js`
   as the new base example `eslint` configuration.
 * Apps must upgrade to `@xh/hoist-dev-utils` v11+ and `@xh/hoist` v73+
 
