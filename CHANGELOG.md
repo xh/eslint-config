@@ -1,5 +1,27 @@
 # Changelog
 
+## v7.0.0 - 2025-05-15
+
+### 💥 Breaking Changes
+
+* Upgrade from eslint `v8.x` to `v9.x` requires changes to Hoist Applications' esLint configurations.
+  The `.eslintrc` file to `eslint.client.cjs` and use the configuration found in Toolbox's `eslint.client.cjs`
+  as the new base example esLint configuration.
+* Apps must upgrade to @xh/hoist-dev-utils v11+ and @xh/hoist v73+
+
+### 📚 Libraries
+
+* @babel/core: `7.22 -> 7.27`
+* @babel/eslint-parser: `7.22 -> 7.27`
+* @babel/eslint-plugin: `7.22 -> 7.27`
+* added: @eslint/js: `9.26`
+* @typescript-eslint/parser: `6.1 -> 8.32`
+* eslint: `8.45 -> 9.26`
+* eslint-plugin-react: `7.32 -> 7.37`
+* eslint-plugin-react-hooks: `4.6 -> 5.2`
+* added: globals: `16.1`
+* replaced: @typescript-eslint/eslint-plugin `6.1` with typescript-eslint `8.32`
+
 ## v6.0.0 - 2023-07-19
 
 * `@typescript-eslint` rules will now only be applied to TypeScript files.
