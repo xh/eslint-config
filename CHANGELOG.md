@@ -1,11 +1,13 @@
 # Changelog
 
-## v7.0-SNAPSHOT NOT YET RELEASED
+## v7.0.0 - 2025-05-15
 
 ### 💥 Breaking Changes
 
+* Upgrade from eslint `v8.x` to `v9.x` requires changes to Hoist Applications' esLint configurations.
+  The `.eslintrc` file to `eslint.client.cjs` and use the configuration found in Toolbox's `eslint.client.cjs`
+  as the new base example esLint configuration.
 * Apps must upgrade to @xh/hoist-dev-utils v11+ and @xh/hoist v73+
-* Apps must also rename their .eslintrc file to eslint.client.cjs and copy the configuration found in Toolbox.
 
 ### 📚 Libraries
 
