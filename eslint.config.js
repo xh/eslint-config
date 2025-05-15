@@ -68,7 +68,7 @@ module.exports = tseslint.config(
                 // similar case where we more likely intend to use the lodash version (which yields a
                 // different result for `null`).
                 isFinite: 'off'
-            },
+            }
         },
         rules: {
             // Hoist - disabled
@@ -154,7 +154,7 @@ module.exports = tseslint.config(
     {
         files: ['**/*.ts', '**/*.tsx'],
         languageOptions: {
-            parserOptions: {projectService: ['./tsconfig.json']},
+            parserOptions: {projectService: ['./tsconfig.json']}
         },
         // Note: Remember to disable the base rules when enabling the ts version
         rules: {
