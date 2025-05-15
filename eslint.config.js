@@ -75,13 +75,8 @@ module.exports = tseslint.config(
             'eqeqeq': 'off',
             'no-console': 'off',
             'no-empty': 'off',
-            'no-multi-spaces': 'off',
             'no-prototype-builtins': 'off',
-            'no-trailing-spaces': 'off',
             'no-underscore-dangle': 'off',
-            'semi-spacing': 'off',
-            'space-infix-ops': 'off',
-            'space-unary-ops': 'off',
             'strict': 'off',
 
             // React + Hooks
@@ -97,56 +92,9 @@ module.exports = tseslint.config(
                 caughtErrors: 'none',
                 args: 'none'
             }],
-            'array-bracket-spacing': ['error', 'never'],
-            'comma-dangle': 'error',
-            'comma-spacing': ['error', {
-                before: false,
-                after: true
-            }],
-            'comma-style': 'error',
-            'brace-style': ['error', '1tbs', {
-                allowSingleLine: true
-            }],
             'curly': ['error', 'multi-line'],
-            'key-spacing': ['error', {
-                beforeColon: false,
-                afterColon: true,
-                mode: 'minimum'
-            }],
-            'keyword-spacing': ['error', {
-                before: true,
-                after: true
-            }],
-            'space-before-function-paren': ['error', {
-                anonymous: 'never',
-                named: 'never',
-                asyncArrow: 'always'
-            }],
             'no-spaced-func': 'error',
-            'space-in-parens': 'error',
-            'space-before-blocks': 'error',
-            'spaced-comment': ['error', 'always', {
-                markers: ['=', 'noinspection'],
-                exceptions: ['-']
-            }],
-            'quotes': ['error', 'single', {
-                avoidEscape: true,
-                allowTemplateLiterals: true
-            }],
-            'indent': ['error', 4, {
-                SwitchCase: 1,
-                // Workaround for esLint v8 indent issue w/decorators.
-                // See https://github.com/eslint/eslint/issues/15299#issuecomment-968099681
-                ignoredNodes: ['PropertyDefinition']
-            }],
-            'operator-linebreak': ['error', 'after'],
-            'no-multiple-empty-lines': ['error', {
-                max: 2
-            }],
             'block-scoped-var': 'error',
-            'semi': ['error', 'always', {
-                omitLastInOneLineBlock: true
-            }],
             'no-return-await': 'error'
         }
     },
