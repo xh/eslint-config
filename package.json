@@ -1,25 +1,28 @@
 {
   "name": "@xh/eslint-config",
-  "version": "6.0.0",
+  "version": "7.0.0-SNAPSHOT",
   "description": "Sharable base ESLint config for Hoist React applications",
   "repository": "github:xh/eslint-config",
   "homepage": "https://github.com/xh/eslint-config",
   "bugs": "https://github.com/xh/eslint-config/issues",
   "author": "Extremely Heavy Industries, Inc.",
   "license": "Apache-2.0",
+  "main": "eslint.config.js",
   "files": [
-    "index.js",
+    "eslint.config.js",
     "babel.config.js"
   ],
   "dependencies": {
-    "@babel/core": "^7.22",
-    "@babel/eslint-parser": "^7.22",
-    "@babel/eslint-plugin": "^7.22",
-    "@typescript-eslint/eslint-plugin": "^6.1",
-    "@typescript-eslint/parser": "^6.1",
-    "eslint": "^8.45",
-    "eslint-plugin-react": "^7.32",
-    "eslint-plugin-react-hooks": "^4.6",
-    "typescript": "5.x"
+    "@babel/core": "^7.27",
+    "@babel/eslint-parser": "^7.27",
+    "@babel/eslint-plugin": "^7.27",
+    "@eslint/js": "^9.26",
+    "@typescript-eslint/parser": "^8.32",
+    "eslint": "^9.26",
+    "eslint-plugin-react": "^7.37",
+    "eslint-plugin-react-hooks": "^5.2",
+    "globals": "^16.1",
+    "typescript": "5.x",
+    "typescript-eslint": "^8.32"
   }
 }
