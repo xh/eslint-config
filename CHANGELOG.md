@@ -1,5 +1,40 @@
 # Changelog
 
+## v8.0.0-SNAPSHOT
+
+### 💥 Breaking Changes
+
+* Upgrade from ESLint v9 to v10. Requires Node `20.19+`, `22.13+`, or `24+`. No lint rule changes -
+  app `eslint.config.js` files built on the v7 flat config pattern continue to work unchanged.
+* Removed `babel.config.js` and all `@babel/*` dependencies. These were unused since the v7 flat
+  config migration - `@typescript-eslint/parser` handles all file types, so the old
+  `parserOptions.babelOptions` reference was inert. Only breaking for an app that imports
+  `@xh/eslint-config/babel.config.js` directly (no known usages).
+
+### ⚙️ Technical
+
+* Restored a build pipeline, now on GitHub Actions (previously TeamCity). Snapshots publish to
+  npm on every push to develop, releases via manual workflow dispatch - the same pattern as
+  hoist-react and hoist-dev-utils, reusing the shared composite actions from hoist-dev-utils.
+  A CI workflow smoke tests the config on PRs, and Dependabot keeps actions and deps current.
+* Config now built with `defineConfig()` from `eslint/config` instead of the deprecated
+  `tseslint.config()`. Computed config verified identical.
+* Switched repo tooling from yarn to pnpm. `pnpm-lock.yaml` is now the lockfile, with the pnpm
+  version pinned via the `packageManager` field in `package.json`.
+* Added `CLAUDE.md` with repo orientation for AI-assisted development.
+
+### 📚 Libraries
+
+* @babel/core: `removed`
+* @babel/eslint-parser: `removed`
+* @babel/eslint-plugin: `removed`
+* @eslint/js: `9.26 -> 10.0`
+* @typescript-eslint/parser: `8.32 -> 8.68`
+* eslint: `9.26 -> 10.9`
+* eslint-plugin-react-hooks: `5.2 -> 7.1`
+* globals: `16.1 -> 17.11`
+* typescript-eslint: `8.32 -> 8.68`
+
 ## v7.0.0 - 2025-05-15
 
 ### 💥 Breaking Changes

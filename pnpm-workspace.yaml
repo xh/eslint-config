@@ -1,0 +1,7 @@
+# pnpm settings only - single-package repo, not a workspace.
+
+# eslint-plugin-react (latest published) caps its eslint peer range at v9 but is known-good
+# under v10 in flat config - acknowledge rather than warn on every install.
+peerDependencyRules:
+  allowedVersions:
+    eslint: '10'

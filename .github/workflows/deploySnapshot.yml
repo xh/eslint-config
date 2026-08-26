@@ -1,0 +1,81 @@
+# Deploy Snapshot — Publishes a SNAPSHOT build to npm on every push to develop,
+# under the `next` dist-tag. For numbered releases, see Deploy Release.
+
+name: Deploy Snapshot
+
+on:
+    push:
+        branches: [ "develop" ]
+    workflow_dispatch:
+        inputs:
+            version:
+                description: '(Optional) Snapshot version to override default in package.json. Note that the suffix "-SNAPSHOT" will be automatically appended if not present.'
+                required: false
+                default: ''
+                type: string
+
+# Debounce builds by branch - newer runs cancel in-progress ones.
+concurrency:
+    group: deploy-snapshot-${{ github.ref }}
+    cancel-in-progress: true
+
+jobs:
+    build:
+
+        runs-on: ubuntu-latest
+        # npm allows one trusted publisher config per package - ours names Deploy Release,
+        # so this workflow publishes with the static NPM_TOKEN.
+        permissions:
+            contents: read
+        # setup-node's .npmrc references ${NODE_AUTH_TOKEN} - a placeholder keeps non-publish
+        # steps warning-free. The real token is scoped to the publish step only.
+        env:
+            NODE_AUTH_TOKEN: 'unused-outside-publish'
+
+        steps:
+        - uses: actions/checkout@v7
+
+        # Installs the pnpm version pinned in package.json; install runs separately below.
+        - name: Setup pnpm
+          uses: pnpm/setup@v2
+          with:
+              install: false
+
+        - name: Setup Node.js
+          uses: actions/setup-node@v7
+          with:
+              node-version-file: '.nvmrc'
+              registry-url: 'https://registry.npmjs.org'
+              cache: 'pnpm'
+
+        - name: Install dependencies
+          run: pnpm install --frozen-lockfile
+
+        - name: Smoke test config
+          run: bash .github/scripts/smoke-test.sh
+
+        # Shared XH action, SHA-pinned - Dependabot keeps it current.
+        - name: Prepare snapshot version
+          id: snapshot
+          uses: xh/hoist-dev-utils/.github/actions/prepare-npm-snapshot-version@71d46b39323491a7fd5090e7b651958b05630fa0 # master
+          with:
+              version: ${{ inputs.version }}
+
+        # `--no-git-checks`: pnpm's publish guards don't fit here - publishing from develop
+        # with a tree dirtied by the version bump above is expected.
+        - name: Publish snapshot to npm
+          env:
+              NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+          run: pnpm publish --no-git-checks --tag next
+
+        # Best-effort only - a summary glitch must never fail an otherwise-good publish.
+        - name: Write job summary
+          continue-on-error: true
+          env:
+              SNAPSHOT_VERSION: ${{ steps.snapshot.outputs.snapshot-version }}
+          run: |
+              {
+                echo "### 📦 Snapshot published to npm"
+                echo ""
+                echo "Version: [\`$SNAPSHOT_VERSION\`](https://www.npmjs.com/package/@xh/eslint-config/v/$SNAPSHOT_VERSION)"
+              } >> "$GITHUB_STEP_SUMMARY"

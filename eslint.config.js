@@ -1,11 +1,12 @@
-const js = require('@eslint/js'),
+const {defineConfig} = require('eslint/config'),
+    js = require('@eslint/js'),
     tseslint = require('typescript-eslint'),
     tsParser = require('@typescript-eslint/parser'),
     react = require('eslint-plugin-react'),
     reactHooks = require('eslint-plugin-react-hooks'),
     globals = require('globals');
 
-module.exports = tseslint.config(
+module.exports = defineConfig(
     js.configs.recommended,
     {
         files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
@@ -17,10 +18,7 @@ module.exports = tseslint.config(
         languageOptions: {
             parser: tsParser,
             parserOptions: {
-                sourceType: 'module',
-                babelOptions: {
-                    configFile: '@xh/eslint-config/babel.config.js'
-                }
+                sourceType: 'module'
             },
             globals: {
                 // Browser is deliberately omitted to catch errors where a missing import falls back
