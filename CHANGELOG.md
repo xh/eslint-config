@@ -1,11 +1,14 @@
 # Changelog
 
-## v8.0.0-SNAPSHOT
+## v8.0.0 - 2026-08-26
 
 ### 💥 Breaking Changes
 
-* Upgrade from ESLint v9 to v10. Requires Node `20.19+`, `22.13+`, or `24+`. No lint rule changes -
-  app `eslint.config.js` files built on the v7 flat config pattern continue to work unchanged.
+* Upgrade from ESLint v9 to v10. Requires Node `20.19+`, `22.13+`, or `24+`. App
+  `eslint.config.js` files built on the v7 flat config pattern continue to work unchanged.
+* ESLint v10's `recommended` config enables three new rules, inherited here:
+  `no-useless-assignment`, `no-unassigned-vars`, and `preserve-caught-error`. Expect a small
+  number of new findings in app code.
 * Removed `babel.config.js` and all `@babel/*` dependencies. These were unused since the v7 flat
   config migration - `@typescript-eslint/parser` handles all file types, so the old
   `parserOptions.babelOptions` reference was inert. Only breaking for an app that imports
