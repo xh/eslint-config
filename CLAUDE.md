@@ -61,8 +61,6 @@ Keep dependency lines aligned with what consumers actually run:
 - `eslint` major should match what hoist-react has in its own `package.json`.
 - `typescript` must stay within the range `typescript-eslint` supports and match hoist-react's major.
 
-Known-good unmet `eslint` peer ranges are acknowledged in `pnpm-workspace.yaml` - see comments there.
-
 ### CI/CD
 
 GitHub Actions, following the same pattern as hoist-react and hoist-dev-utils:

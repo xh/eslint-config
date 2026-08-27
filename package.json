@@ -15,7 +15,6 @@
     "@eslint/js": "^10.0",
     "@typescript-eslint/parser": "^8.68",
     "eslint": "^10.9",
-    "eslint-plugin-react": "^7.37",
     "eslint-plugin-react-hooks": "^7.1",
     "globals": "^17.11",
     "typescript": "5.x",

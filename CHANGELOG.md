@@ -1,5 +1,19 @@
 # Changelog
 
+## v8.0.1 - 2026-08-26
+
+### ⚙️ Technical
+
+* Removed the `eslint-plugin-react` dependency. This config used only its `jsx-uses-react` and
+  `jsx-uses-vars` rules, both now redundant - `@typescript-eslint/parser` is set for all file types,
+  so its scope manager already resolves JSX references for `no-unused-vars`. The plugin has had no
+  npm release since April 2025 and caps its `eslint` peer range at v9. Only breaking for an app that
+  enables its own `react/*` rules, which must now add the plugin itself.
+
+### 📚 Libraries
+
+* eslint-plugin-react: `removed`
+
 ## v8.0.0 - 2026-08-26
 
 ### 💥 Breaking Changes

@@ -2,7 +2,6 @@ const {defineConfig} = require('eslint/config'),
     js = require('@eslint/js'),
     tseslint = require('typescript-eslint'),
     tsParser = require('@typescript-eslint/parser'),
-    react = require('eslint-plugin-react'),
     reactHooks = require('eslint-plugin-react-hooks'),
     globals = require('globals');
 
@@ -11,7 +10,6 @@ module.exports = defineConfig(
     {
         files: ['**/*.js', '**/*.jsx', '**/*.ts', '**/*.tsx'],
         plugins: {
-            react,
             'react-hooks': reactHooks,
             '@typescript-eslint': tseslint.plugin
         },
@@ -77,9 +75,7 @@ module.exports = defineConfig(
             'no-underscore-dangle': 'off',
             'strict': 'off',
 
-            // React + Hooks
-            'react/jsx-uses-react': 'error',
-            'react/jsx-uses-vars': 'error',
+            // React Hooks
             'react-hooks/exhaustive-deps': 'warn',
             // Linter unable to interpret our factory pattern w/hook calls in render fn config.
             'react-hooks/rules-of-hooks': 'off',
