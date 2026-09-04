@@ -57,7 +57,7 @@ jobs:
         # Shared XH action, SHA-pinned - Dependabot keeps it current.
         - name: Prepare snapshot version
           id: snapshot
-          uses: xh/hoist-dev-utils/.github/actions/prepare-npm-snapshot-version@71d46b39323491a7fd5090e7b651958b05630fa0 # master
+          uses: xh/hoist-dev-utils/.github/actions/prepare-npm-snapshot-version@a7698bfb83cd6b75f956c0a4d82fb3d6b07eab83 # master
           with:
               version: ${{ inputs.version }}
 
