@@ -97,7 +97,7 @@ jobs:
         # The tag points to a commit where package.json still has the SNAPSHOT version -
         # intentional, the version bump is never committed back.
         - name: Create tag and GitHub release
-          uses: xh/hoist-dev-utils/.github/actions/create-tag-and-github-release@71d46b39323491a7fd5090e7b651958b05630fa0 # master
+          uses: xh/hoist-dev-utils/.github/actions/create-tag-and-github-release@0abc3a0453e92a258cef156856a5e0670017c088 # master
           with:
               version: ${{ inputs.version }}
               is-hotfix: ${{ inputs.is-hotfix }}
