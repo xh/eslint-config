@@ -1,5 +1,17 @@
 # Changelog
 
+## v8.1.0 - 2026-10-04
+
+### ⚙️ Technical
+
+* Updated the bundled TypeScript from 5.9 to 6.0, the newest version that `typescript-eslint`
+  supports. Type-aware rules now read app code with the type rules of TypeScript 6 and 7, which
+  hoist-react v89 builds with. Lint results are unchanged for hoist-react and Toolbox.
+
+### 📚 Libraries
+
+* typescript: `5.9 -> 6.0`
+
 ## v8.0.1 - 2026-08-26
 
 ### ⚙️ Technical
